@@ -18,3 +18,9 @@ Verify the server meets the contract
 sbt "pact-verify --host localhost --protocol http --port 9000 --source target/pacts"
 ```
 
+Assemble the jar
+
+```
+sbt assembly
+```
+
