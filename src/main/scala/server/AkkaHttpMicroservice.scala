@@ -13,7 +13,7 @@ object AkkaHttpMicroservice extends App with Routes {
   implicit val materializer = ActorMaterializer()
 
   val config = ConfigFactory.load()
-  val logger: LoggingAdapter = Logging(system, getClass)
+//  val logger: LoggingAdapter = Logging(system, getClass)
 
   Http().bindAndHandle(routes, "0.0.0.0", 9000)
 }
